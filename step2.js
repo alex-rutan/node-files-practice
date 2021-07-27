@@ -3,7 +3,9 @@
 const fsP = require('fs/promises')
 const axios = require("axios");
 
-
+/* 
+takes in a local path, outputs the contents to the console.
+ */
 async function cat(path) {
     try {
         let contents = await fsP.readFile(path, "utf8");
